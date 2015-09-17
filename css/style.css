@@ -1,0 +1,145 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	font-family: '微软雅黑 Bold', '微软雅黑';
+}
+html,body{
+	width:100%;
+	height:100%;
+	background-color:#040000;
+}
+.container{
+	position:relative;
+	background-color:#040000;
+}
+.containerbg{
+	position:relative;
+	background-color:#040000;
+	min-height:100%;
+	background: url(../images/background.jpg) no-repeat top left/cover;
+}
+.container > img{
+    width:100%;
+    display: block;
+}
+
+
+.Grid {
+    display: flex;
+    position: absolute;
+	top:0;
+	left:50%;
+	width:1080px;
+	margin-left:-540px;
+	padding-bottom:50px;
+}
+.Grid-cell {
+    flex: 1;
+	position:relative;
+}
+.Grid .left{
+	height:240px;
+	background:url(../images/opacityBg.png) repeat;
+}
+.Grid .hint{
+	position: absolute;
+    bottom: -36px;
+    left: 45px;
+    width: 80%;
+}
+.leftNav{
+	background-color:#796a56;
+	width:70px;
+	height:100%;
+	float:right;
+	padding:25px 0;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.leftNav a{
+	color:#fff;
+    text-align: center;
+    display: block;
+    font-size:12px;
+    text-decoration: none;
+}
+/*.leftNav a span{
+	display: block;
+}*/
+.leftContent{
+	height:100%;
+}
+.leftContent p{
+	height:70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;s
+}
+.leftContent p a{
+	display:block;
+	width:80%;
+	text-align: center;
+}
+.leftContent .logoInner{
+	width:90%;
+}
+.leftContent .input-search{
+	background-color:#fff;
+	width:75%;
+	margin:0 auto;
+	height:35px;
+	line-height: 35px;
+	position: relative;
+}
+.leftContent .input-search .searchInput{
+	width:100%;
+	height: 100%;
+	border:0px solid #fff;
+	padding:0 40px 0 10px;
+}
+.leftContent .search-icon{
+	position: absolute;
+	right:10px;
+	top:10px;
+	padding-left:10px;
+	border-left:1px solid #939190;
+}
+.leftContent .search-icon:hover{
+	cursor: pointer;
+}
+.Grid  .Grid-cell .share{
+	position:absolute;
+	top:240px;
+	right:-80px;
+	height:80px;
+	line-height:40px;
+}
+.Grid  .Grid-cell .share a{
+	display: block;
+}
+.Grid  .Grid-cell .header{
+	display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; 
+	height:240px;
+}
+.Grid  .Grid-cell .header .aboutus-detail{
+	text-align: center;
+}
+.Grid  .Grid-cell .header .icon-detail img{
+    width:98%;
+}
+.Grid  .Grid-cell .header .header-icon{
+	text-align: center;
+}
+.Grid  .Grid-cell .header .header-icon img{
+	width:92%;
+}
+.Grid  .Grid-cell .director_content > img{
+	width:100%;
+}
+                    

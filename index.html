@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>观美--首页</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/slick/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/slick/slick/slick-theme.css">
+</head>
+<body>
+
+    <div id="index">
+        <div class="autoslide">
+			<div class="pic" style="background-image:url(images/slide/index-01.jpg);">
+			</div>
+			<div class="pic" style="background-image:url(images/KID/procduct-01.jpg);">
+			</div>
+			<div class="pic" style="background-image:url(images/KID/procduct-02.jpg);">
+			</div>
+		</div>
+		<div class="content">
+			<div class="logo">
+				<img src="images/logo.png" alt="观美">
+			</div>
+			<div class="bar">
+			    <div class="bar-tab">
+					<div class="tab-item">
+					    <a href="gallery.html" class="item-title" target="_blank">
+					    	<img src="images/gallery.png" alt="gallery">
+					    </a>
+					    <div class="menu">
+					    	<a href="gallery.html">
+					    		<img src="images/list/all.png" alt="All">
+					    	</a>
+					    	<a href="product.html">
+					    		<img src="images/list/KID.png" alt="KID">
+					    	</a>
+					    	<a href="javascript:;">
+					    		<img src="images/list/love.png" alt="love">
+					    	</a>
+					    	<a href="javascript:;">
+					    		<img src="images/list/friend.png" alt="friend">
+					    	</a>
+					    </div>
+				    </div>
+					<div class="tab-item">
+					    <a href="product.html" class="item-title" target="_blank">
+					    	<img src="images/procduct.png" alt="procduct">
+					    </a>
+					    <div class="menu">
+					    	<a href="product.html">
+					    		<img src="images/list/KID.png" alt="KID">
+					    	</a>
+					    	<a href="javascript:;">
+					    		<img src="images/list/love.png" alt="love">
+					    	</a>
+					    	<a href="javascript:;">
+					    		<img src="images/list/friend.png" alt="friend">
+					    	</a>
+					    </div>
+				    </div>
+					<div class="tab-item">
+					    <a href="contact.html" class="item-title" target="_blank">
+					    	<img src="images/contactus.png" alt="contactus">
+					    </a>
+					    <div class="menu">
+					    	<a href="aboutus.html">
+					    	    <img src="images/list/aboutus.png" alt="contactus">
+					    	</a>
+					    	<a href="contact.html">
+					    	    <img src="images/list/contact.png" alt="contactus">
+					    	</a>
+					    </div>
+				    </div>
+			    </div>
+			    <div class="share">
+			    	<a href="javascript:;">
+			    		<img src="images/weibo.png" alt="微博">
+			    	</a>
+			    	<a href="javascript:;">
+			    		<img src="images/wechat.png" alt="微信">
+			    	</a>
+			    </div>
+			</div>
+		</div>
+
+	</div>
+	<script src="bower_components/jQuery/jquery-1.11.3.min.js"></script>
+	<script src="bower_components/slick/jquery-migrate-1.2.1.min.js"></script>
+    <script src="bower_components/slick/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+		    $('.autoslide').slick({
+			  speed: 600,
+			  fade: true,
+			  autoplay:true,
+			  nextArrow:false,
+			  prevArrow:false,
+			  cssEase: 'linear'
+			});
+	    });
+	</script>
+</body>
+</html>

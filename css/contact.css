@@ -1,0 +1,15 @@
+.Grid  .Grid-cell .director_content .map{
+	height:300px;
+	/*background-color:#796a56;*/
+}
+.Grid  .Grid-cell .director_content >img{
+	/*margin:10px 0;
+	font-size:17px;
+	font-family: '宋体';
+	color:#fff;
+	height: 17px;
+	line-height: 17px;*/
+	display: block;
+	width: 80%;
+	margin-top:20px;
+}
