@@ -1,25 +1,25 @@
 *{
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-body{
-	font-family: '微软雅黑 Bold', '微软雅黑';
+body {
+    font-family: Arial, 'Microsoft YaHei', 微软雅黑, 宋体, 'sans-serif normal';
 }
 html,body{
-	width:100%;
-	height:100%;
-	background-color:#040000;
+    width:100%;
+    height:100%;
+    background-color:#040000;
 }
 .container{
-	position:relative;
-	background-color:#040000;
+    position:relative;
+    background-color:#040000;
 }
 .containerbg{
-	position:relative;
-	background-color:#040000;
-	min-height:100%;
-	background: url(../images/background.jpg) no-repeat top left/cover;
+    position:relative;
+    background-color:#040000;
+    min-height:100%;
+    background: url(../images/background.jpg) no-repeat top left/cover;
 }
 .container > img{
     width:100%;
@@ -30,116 +30,127 @@ html,body{
 .Grid {
     display: flex;
     position: absolute;
-	top:0;
-	left:50%;
-	width:1080px;
-	margin-left:-540px;
-	padding-bottom:50px;
+    top:0;
+    left:50%;
+    width:1080px;
+    margin-left:-540px;
+    padding-bottom:50px;
 }
 .Grid-cell {
-    flex: 1;
-	position:relative;
+    position:relative;
+}
+.Grid-cell:nth-child(2) {
+    width: 580px;
 }
 .Grid .left{
-	height:240px;
-	background:url(../images/opacityBg.png) repeat;
+    height:270px;
+    width: 500px;
+    background:url(../images/opacityBg.png) repeat;
 }
 .Grid .hint{
-	position: absolute;
+    position: absolute;
     bottom: -36px;
     left: 45px;
     width: 80%;
 }
 .leftNav{
-	background-color:#796a56;
-	width:70px;
-	height:100%;
-	float:right;
-	padding:25px 0;
-	display: flex;
+    background-color:#796a56;
+    width:100px;
+    height:100%;
+    float:right;
+    padding:25px 0;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.leftNav a{
-	color:#fff;
+.nav-list a{
+    color:#fff;
     text-align: center;
     display: block;
     font-size:12px;
     text-decoration: none;
+    line-height: 165%;
+}
+.nav-list a span {
+    display: block;
+}
+.nav-list a span.en {
+    display: block;
+    font-size: 15px;
 }
 /*.leftNav a span{
-	display: block;
+    display: block;
 }*/
 .leftContent{
-	height:100%;
+    height:100%;
+    margin-right: 100px;
 }
 .leftContent p{
-	height:70%;
-	display: flex;
-	align-items: center;
-	justify-content: center;s
+    height:78%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .leftContent p a{
-	display:block;
-	width:80%;
-	text-align: center;
+    display:block;
+    width:80%;
+    text-align: center;
 }
 .leftContent .logoInner{
-	width:90%;
+    width:90%;
 }
 .leftContent .input-search{
-	background-color:#fff;
-	width:75%;
-	margin:0 auto;
-	height:35px;
-	line-height: 35px;
-	position: relative;
+    background-color:#fff;
+    margin: 0 3em 0 1em;
+    height:35px;
+    line-height: 35px;
+    position: relative;
 }
 .leftContent .input-search .searchInput{
-	width:100%;
-	height: 100%;
-	border:0px solid #fff;
-	padding:0 40px 0 10px;
+    width:100%;
+    height: 100%;
+    border:0px solid #fff;
+    padding:0 58px 0 10px;
 }
 .leftContent .search-icon{
-	position: absolute;
-	right:10px;
-	top:10px;
-	padding-left:10px;
-	border-left:1px solid #939190;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    padding: 6px 20px 6px 20px;
+    border-left: 1px solid #939190;
 }
 .leftContent .search-icon:hover{
-	cursor: pointer;
+    cursor: pointer;
 }
 .Grid  .Grid-cell .share{
-	position:absolute;
-	top:240px;
-	right:-80px;
-	height:80px;
-	line-height:40px;
+    position:absolute;
+    top:240px;
+    right:-80px;
+    height:80px;
+    line-height:40px;
 }
 .Grid  .Grid-cell .share a{
-	display: block;
+    display: block;
 }
 .Grid  .Grid-cell .header{
-	display: flex;
+    display: flex;
     justify-content: flex-end;
     align-items: flex-end; 
-	height:240px;
+    height:270px;
+    margin-bottom: 50px;
 }
 .Grid  .Grid-cell .header .aboutus-detail{
-	text-align: center;
+    text-align: center;
 }
 .Grid  .Grid-cell .header .icon-detail img{
     width:98%;
 }
 .Grid  .Grid-cell .header .header-icon{
-	text-align: center;
+    text-align: center;
 }
 .Grid  .Grid-cell .header .header-icon img{
-	width:92%;
 }
 .Grid  .Grid-cell .director_content > img{
-	width:100%;
+    width:100%;
 }
                     

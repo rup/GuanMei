@@ -1,3 +1,4 @@
+
 #index{
 	position:relative;
 	width:100%;
@@ -16,11 +17,12 @@
 	margin:70px auto;
 }
 .content .bar{
-	position: relative;
-	margin-top:30px;
+	position: absolute;
+	top: 50%;
+	margin-top: -140px;
 	width:100%;
-	height:180px;
-	background:url(../images/opacityBg.png) repeat;
+	height:280px;
+	background: rgba(255,255,255,.5);
 }
 .content .bar .bar-tab{
 	width:1080px;
@@ -42,10 +44,13 @@
 }
 .content .bar .bar-tab .tab-item .menu > a{
 	color:#fff;
-    font-size:14px;
+    font-size: 10px;
     display:block;
-    margin-bottom:18px;
+    margin-bottom: 12px;
     text-decoration: none;
+}
+.content .bar .bar-tab .tab-item .menu > a span.en{
+    font-size: 12px;
 }
 .content .bar .bar-tab .tab-item .menu > a:hover{
 	text-decoration: underline;

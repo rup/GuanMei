@@ -1,81 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>观美--Gallery</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+  <title>观美--Gallery</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/gallery.css">
 </head>
 <body>
-    <div class="container">
-    	<img src="images/background.jpg" alt="">
-    	<div class="Grid">
-    		<div class="Grid-cell left">
-    			<div class="leftNav" id="tab_nav">
-    				<a href="javascript:;">
-    					<img src="images/list/all.png" alt="all">
-    				</a>
-    				<a href="javascript:;">
-    					<img src="images/list/kid.png" alt="亲子">
-    				</a>
-    				<a href="javascript:;">
-    					<img src="images/list/love.png" alt="婚纱">
-    				</a>
-    				<a href="javascript:;">
-    					<img src="images/list/friend.png" alt="闺蜜">
-    				</a>
-    			</div>
-    		    <div class="leftContent">
-    		    	<p>
-                        <a href="index.html">
-                            <img src="images/logoInner.png" alt="观美" class="logoInner">
-                        </a>
-                    </p>
-    		    	<p class="input-search">
-    		    		<input type="text" class="searchInput">
-    		    		<img src="images/search.png" alt="搜索" class="search-icon">
-    		    	</p>
-    		    </div>
-    		    <img src="images/gallery/hint.png" alt="" class="hint">
-    		</div>
-    		<div class="Grid-cell">
-                <div class="share">
-                    <a href="javascript:;">
-                        <img src="images/weibo.png" alt="微博">
-                    </a>
-                    <a href="javascript:;">
-                        <img src="images/wechat.png" alt="微信">
-                    </a>
-                </div>
-                <div class="grid js-masonry" data-masonry-options='{ "itemSelector": ".grid-item", "columWidth": 100 }' id="grid">
-                    <div class="grid-item"><img src="images/gallery/gallery-01.png" alt="亲子"></div>
-                    <div class="grid-item"><img src="images/gallery/gallery-02.png" alt="亲子"></div>
-                    <div class="grid-item"><img src="images/gallery/gallery-03.png" alt="亲子"></div>
-                    <div class="grid-item"><img src="images/gallery/gallery-04.png" alt="婚纱"></div>
-                    <div class="grid-item"><img src="images/gallery/gallery-05.png" alt="闺蜜"></div>
-                    <div class="grid-item"><img src="images/gallery/gallery-06.png" alt="婚纱"></div>
-                    <div class="grid-item"><img src="images/gallery/gallery-07.png" alt="闺蜜"></div>
-                </div>
-            </div>
-    	</div>
-    </div>
-    <!-- 弹窗 -->
-    <div class="open" id="open">
-        <div class="open_content">
+  <div class="container">
+    <img src="images/background.jpg" alt="">
+    <div class="Grid">
+      <div class="Grid-cell left">
+        <div class="leftNav nav-list">
+          <a href="gallery.html">
+            <span class="en">All</span>
+            <span>全部</span>
+          </a>
+          <a href="gallery.html">
+            <span class="en">KID</span>
+            <span>亲子</span>
+          </a>
+          <a href="gallery.html">
+            <span class="en">LOVE</span>
+            <span>婚纱</span>
+          </a>
+          <a href="gallery.html">
+            <span class="en">FRIEND</span>
+            <span>闺蜜</span>
+          </a>
         </div>
+        <div class="leftContent">
+          <p>
+            <a href="index.html">
+              <img src="images/logoInner.png" alt="观美" class="logoInner">
+            </a>
+          </p>
+          <p class="input-search">
+            <input type="text" class="searchInput">
+            <img src="images/search.png" alt="搜索" class="search-icon">
+          </p>
+        </div>
+        <img src="images/gallery/hint.png" alt="" class="hint">
+      </div>
+      <div class="Grid-cell">
+        <div class="share">
+          <a href="javascript:;">
+            <img src="images/weibo.png" alt="微博">
+          </a>
+          <a href="javascript:;">
+            <img src="images/wechat.png" alt="微信">
+          </a>
+        </div>
+        <div class="grid js-masonry" data-masonry-options='{ "itemSelector": ".grid-item", "columWidth": 100 }' id="grid">
+          <div class="grid-item"><img src="images/gallery/gallery-01.png" alt="亲子"></div>
+          <div class="grid-item"><img src="images/gallery/gallery-02.png" alt="亲子"></div>
+          <div class="grid-item"><img src="images/gallery/gallery-03.png" alt="亲子"></div>
+          <div class="grid-item"><img src="images/gallery/gallery-04.png" alt="婚纱"></div>
+          <div class="grid-item"><img src="images/gallery/gallery-05.png" alt="闺蜜"></div>
+          <div class="grid-item"><img src="images/gallery/gallery-06.png" alt="婚纱"></div>
+          <div class="grid-item"><img src="images/gallery/gallery-07.png" alt="闺蜜"></div>
+        </div>
+      </div>
     </div>
-    <script src="bower_components/jQuery/jquery-1.11.3.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/gallery.js"></script>
-    <script type="text/javascript">
-        $('#grid').masonry({
-            itemSelector: '.grid-item',
-            columnWidth: 200
-        });
-    </script>
-    <style type="text/css">
-        .grid-item { width: 48%;color:#fff;padding:0 10px 10px 0; }
-        .grid-item img{width:100%;}
-    </style>
+  </div>
+  <!-- 弹窗 -->
+  <div class="open" id="open">
+    <div class="open_content">
+    </div>
+  </div>
+  <script src="bower_components/jQuery/jquery-1.11.3.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/gallery.js"></script>
+  <script type="text/javascript">
+    $('#grid').masonry({
+      itemSelector: '.grid-item',
+      columnWidth: 200
+    });
+  </script>
+  <style type="text/css">
+    .grid-item { width: 48%;color:#fff;padding:0 10px 10px 0; }
+    .grid-item img{width:100%;}
+  </style>
 </body>
 </html>
