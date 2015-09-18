@@ -99,7 +99,9 @@
   <script src="bower_components/slick/jquery-migrate-1.2.1.min.js"></script>
   <script src="bower_components/slick/slick/slick.min.js"></script>
   <script type="text/javascript">
-    $(document).ready(function(){
+    // $(document).ready(function(){
+    // });
+    document.body.onload = function() {
       $('.autoslide').slick({
         speed: 1000,
         fade: true,
@@ -108,7 +110,8 @@
         prevArrow:false,
         cssEase: 'linear'
       });
-    });
+      
+    }
   </script>
 </body>
 </html>
