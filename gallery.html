@@ -72,10 +72,13 @@
   <script src="js/masonry.pkgd.min.js"></script>
   <script src="js/gallery.js"></script>
   <script type="text/javascript">
-    $('#grid').masonry({
-      itemSelector: '.grid-item',
-      columnWidth: 200
-    });
+    document.body.onload = function() {
+      $('#grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: 200
+      });
+      
+    }
   </script>
   <style type="text/css">
     .grid-item { width: 48%;color:#fff;padding:0 10px 10px 0; }
