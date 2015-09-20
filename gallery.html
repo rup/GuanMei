@@ -94,6 +94,7 @@
   <script src="js/masonry.pkgd.min.js"></script>
   <script src="js/gallery.js"></script>
   <script type="text/javascript">
+    // masonry
     var changeCat = function(){
       var oHash = location.hash.replace("#","");
       if(oHash == ""){
@@ -104,6 +105,7 @@
         $(oClass).parent().parent().show();
 
       }
+
       // fix bug
       setTimeout(function (argument) {
         $('#grid').masonry({
@@ -114,7 +116,8 @@
     }
     window.onhashchange = changeCat
     changeCat()
-    
+
+    // modal
     var tpl = "<div id='myModal' class='modal fade'>" +
                 "<div class='modal-dialog'>" +
                   "<div class='modal-content'>" +
