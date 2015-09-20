@@ -287,7 +287,9 @@ input:focus {
 
 .grid-item {
   color: #fff;
-  padding: 0 10px 10px 0; }
+  padding: 0 10px 10px 0;
+  font-size: 0;
+  width: 290px; }
 
 .grid-item img {
   width: 100%; }
