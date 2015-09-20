@@ -11,19 +11,19 @@
     <div class="Grid">
       <div class="Grid-cell left">
         <div class="leftNav nav-list">
-          <a href="gallery.html">
+          <a href="/gallery.html">
             <span class="en">All</span>
             <span>全部</span>
           </a>
-          <a href="gallery.html">
+          <a href="/gallery.html#kid">
             <span class="en">KID</span>
             <span>亲子</span>
           </a>
-          <a href="gallery.html">
+          <a href="/gallery.html#love">
             <span class="en">LOVE</span>
             <span>婚纱</span>
           </a>
-          <a href="gallery.html">
+          <a href="/gallery.html#friend">
             <span class="en">FRIEND</span>
             <span>闺蜜</span>
           </a>
@@ -51,33 +51,102 @@
           </a>
         </div>
         <div class="grid js-masonry" data-masonry-options='{ "itemSelector": ".grid-item", "columWidth": 100 }' id="grid">
-          <div class="grid-item"><img src="images/gallery/gallery-01.png" alt="亲子"></div>
-          <div class="grid-item"><img src="images/gallery/gallery-02.png" alt="亲子"></div>
-          <div class="grid-item"><img src="images/gallery/gallery-03.png" alt="亲子"></div>
-          <div class="grid-item"><img src="images/gallery/gallery-04.png" alt="婚纱"></div>
-          <div class="grid-item"><img src="images/gallery/gallery-05.png" alt="闺蜜"></div>
-          <div class="grid-item"><img src="images/gallery/gallery-06.png" alt="婚纱"></div>
-          <div class="grid-item"><img src="images/gallery/gallery-07.png" alt="闺蜜"></div>
+          <div class="grid-item">
+            <a href="javascript:;">
+              <img src="images/gallery/gallery-01.png" alt="亲子" class="kid">
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="javascript:;">
+              <img src="images/gallery/gallery-02.png" alt="亲子" class="kid video" url="http://player.youku.com/player.php/sid/XMTMzOTc0ODc0OA==/v.swf">
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="javascript:;">
+              <img src="images/gallery/gallery-03.png" alt="亲子" class="kid">
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="javascript:;">
+              <img src="images/gallery/gallery-04.png" alt="婚纱" class="love">
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="javascript:;">
+              <img src="images/gallery/gallery-05.png" alt="闺蜜" class="friend">
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="javascript:;">
+              <img src="images/gallery/gallery-06.png" alt="婚纱" class="love">
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="javascript:;">
+              <img src="images/gallery/gallery-07.png" alt="闺蜜" class="friend">
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- 弹窗 -->
-  <div class="open" id="open">
-    <div class="open_content">
     </div>
   </div>
   <script src="bower_components/jQuery/jquery-1.11.3.min.js"></script>
   <script src="js/masonry.pkgd.min.js"></script>
   <script src="js/gallery.js"></script>
   <script type="text/javascript">
-    document.body.onload = function() {
-      $('#grid').masonry({
-        itemSelector: '.grid-item',
-        columnWidth: 290
-      });
-
+    var changeCat = function(){
+      var oHash = location.hash.replace("#","");
+      if(oHash == ""){
+        $("#grid > div").show();
+        $('#grid').masonry({
+          itemSelector: '.grid-item',
+          columnWidth: 290
+        });
+      }else{
+        var oClass = "." + oHash;
+        $("#grid img").parent().parent().hide();
+        $(oClass).parent().parent().show();
+        $('#grid').masonry({
+          itemSelector: '.grid-item',
+          columnWidth: 290
+        });
+      }
     }
+    window.onhashchange = changeCat
+    document.body.onload = function() {
+
+      changeCat()
+    }
+    
+    var tpl = "<div id='myModal' class='modal fade'>" +
+                "<div class='modal-dialog'>" +
+                  "<div class='modal-content'>" +
+                  "</div>" +
+                "</div>" +
+              "</div>";
+    $('body').append(tpl);
+    $("#myModal").click(function a() { 
+      $("#myModal").hide(); 
+      $('body').css("overflow","auto")
+    });
+
+    $("#grid .grid-item").click(function(){
+      var $img = $(this).find('img')
+      if ($img.is(".video")) {
+        var url = $img.attr("url")
+        var video = '<embed src="' + url + '" allowFullScreen="true" quality="high"' + 
+            ' width="480" height="400" align="middle" allowScriptAccess="always" ' + 
+            'type="application/x-shockwave-flash"></embed>';
+        $('.modal-content').html(video)
+      } else {
+        var srcImg = $img.attr("src"); 
+        var $newImg = $("<img />").attr("src", srcImg)
+        $('.modal-content').html($newImg)
+      }
+      $("#myModal").show();
+      $('body').css('overflow','hidden')
+    });
+      
   </script>
 </body>
 </html>
