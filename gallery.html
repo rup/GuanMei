@@ -50,7 +50,7 @@
             <img src="images/wechat.png" alt="微信">
           </a>
         </div>
-        <div class="grid js-masonry" data-masonry-options='{ "itemSelector": ".grid-item", "columWidth": 100 }' id="grid">
+        <div class="grid js-masonry" id="grid">
           <div class="grid-item">
             <a href="javascript:;">
               <img src="images/gallery/gallery-01.png" height="258" alt="亲子" class="kid">
@@ -98,19 +98,19 @@
       var oHash = location.hash.replace("#","");
       if(oHash == ""){
         $("#grid > div").show();
-        $('#grid').masonry({
-          itemSelector: '.grid-item',
-          columnWidth: 290
-        });
       }else{
         var oClass = "." + oHash;
         $("#grid img").parent().parent().hide();
         $(oClass).parent().parent().show();
+
+      }
+      // fix bug
+      setTimeout(function (argument) {
         $('#grid').masonry({
           itemSelector: '.grid-item',
           columnWidth: 290
         });
-      }
+      }, 0)
     }
     window.onhashchange = changeCat
     changeCat()
