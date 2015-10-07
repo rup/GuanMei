@@ -42,3 +42,34 @@
       width: 100%;
    }
 }
+.slogan{
+    text-align: center;
+    font-size:18px;
+    color:#fff;
+    letter-spacing: 16px;
+    padding:20px 0;
+    margin-bottom:30px;
+    font-family: "Adobe Heiti Std R";
+}
+#grid .width100{
+    width:100%;
+    position: relative;
+}
+.navigation{
+    display: flex;
+    position: absolute;
+    top:0;
+    left:50%;
+    width:1080px;
+    margin-left:-540px;
+    a{
+        flex:1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:1px solid #fff;
+        text-align: center;
+        height:60px;
+        background-color:#796a56;
+    }
+} 

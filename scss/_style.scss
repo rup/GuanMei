@@ -35,7 +35,7 @@ input:focus {
 .Grid {
     display: flex;
     position: absolute;
-    top:0;
+    top:60px;
     left:50%;
     width:1080px;
     margin-left:-540px;
@@ -158,4 +158,6 @@ input:focus {
 .Grid  .Grid-cell .director_content > img{
     width:100%;
 }
-                    
+.width1080{
+    width: 1080px;
+}        

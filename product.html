@@ -4,43 +4,49 @@
   <title>观美--Product</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/slick/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/slick/slick/slick-theme.css">
 </head>
 <body>
   <div class="container">
     <img src="images/background.jpg" alt="">
+    <div class="navigation">
+      <a href="index.html">
+        <img src="images/home.png" alt="home">
+      </a>
+      <a href="gallery.html">
+        <img src="images/gallery.png" width="90px" alt="gallery">
+      </a>
+      <a href="product.html">
+        <img src="images/procduct.png" width="140px" alt="procduct">
+      </a>
+      <a href="contact.html">
+        <img src="images/contactus.png" width="120px" alt="contactus">
+      </a>
+    </div>
     <div class="Grid">
-      <div class="Grid-cell left">
-        <div class="leftNav nav-list">
-          <a href="#">
-            <span class="en">All</span>
-            <span>全部</span>
-          </a>
-          <a href="#">
-            <span class="en">KID</span>
-            <span>亲子</span>
-          </a>
-          <a href="#">
-            <span class="en">LOVE</span>
-            <span>婚纱</span>
-          </a>
-          <a href="#">
-            <span class="en">FRIEND</span>
-            <span>闺蜜</span>
-          </a>
-        </div>
-        <div class="leftContent">
-          <p>
-            <a href="index.html" >
-              <img src="images/logoInner.png" alt="观美" class="logoInner">
-            </a>
-          </p>
-          <p class="input-search">
-            <input type="text" class="searchInput">
-            <img src="images/search.png" alt="搜索" class="search-icon">
-          </p>
-        </div>
-      </div>
+      
       <div class="Grid-cell">
+        <div class="slick-slider width1080">
+          <div class="pic">
+            <img src="images/slide/slide01.jpg">
+          </div>
+          <div class="pic">
+            <img src="images/slide/slide02.jpg">
+          </div>
+          <div class="pic">
+            <img src="images/slide/slide03.jpg">
+          </div>
+          <div class="pic">
+            <img src="images/slide/slide04.jpg">
+          </div>
+          <div class="pic">
+            <img src="images/slide/slide05.jpg">
+          </div>
+          <div class="pic">
+            <img src="images/slide/slide06.jpg">
+          </div>
+        </div>
         <div class="share">
           <a href="javascript:;">
             <img src="images/weibo.png" alt="微博">
@@ -49,18 +55,23 @@
             <img src="images/wechat.png" alt="微信">
           </a>
         </div>
-        <div class="header">
-          <p class="icon-detail">
-            <img src="images/KID/KID.png" alt="Contact us">
-          </p>
-        </div>
-        <div class="director_content">
-          <img src="images/KID/procduct-01.jpg" alt="">
-          <img src="images/KID/procduct-02.jpg" alt="">
-          <img src="images/KID/procduct-03.jpg" alt="">
-        </div>
       </div>
     </div>
   </div>
+  <script src="bower_components/jQuery/jquery-1.11.3.min.js"></script>
+  <script src="bower_components/slick/jquery-migrate-1.2.1.min.js"></script>
+  <script src="bower_components/slick/slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $('.slick-slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 900,
+      fade: true,
+      autoplay:true,
+      nextArrow:true,
+      prevArrow:true,
+      cssEase: 'linear'
+    });
+  </script>
 </body>
 </html>
