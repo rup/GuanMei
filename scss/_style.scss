@@ -4,7 +4,7 @@
     box-sizing:border-box;
 }
 body {
-    font-family: Arial, 'Microsoft YaHei', 微软雅黑, 宋体, 'sans-serif normal';
+    font-family: 'Helvetica Neue', Helvetica,'Microsoft YaHei', 微软雅黑, 宋体, Arial, sans-serif;
 }
 html,body{
     width:100%;
@@ -171,8 +171,6 @@ input:focus {
     color:#fff;
     text-align: center;
     font-size: 60px;
-    font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
-    text-rendering: optimizeLegibility;
     font-weight: 300;
     letter-spacing: 5px;
 }    

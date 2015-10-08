@@ -4,10 +4,11 @@
   "description": "SkillBank",
   "scripts": {
     "scss": "./bin/build-scss",
-    "sass:ap": "postcss --use autoprefixer css/*.css -d css/",
     "server": "browser-sync start --files \"css/*.css, *.html\" --server",
-    "dev": "npm run server & npm run scss:watch",
-    "scss:watch": "./bin/watch-scss"
+    "watch": "nodemon -e scss -x \"npm run scss\"",
+    "dev": "npm run server & npm run watch",
+    "watch:noap": "node-sass -w scss/ -o css/ --include-path scss/",
+    "scss:ap": "postcss --use autoprefixer css/*.css -d css/"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
