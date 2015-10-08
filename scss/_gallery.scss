@@ -5,9 +5,9 @@
     width: 290px;
     a {
     }
-}
-.grid-item img{
-  width: 100%;
+  img{
+    width: 100%;
+  }
 }
 
 .modal {
@@ -73,3 +73,10 @@
         background-color:#796a56;
     }
 } 
+
+.Grid-cell.left {
+  .grid-item {
+    width: auto;
+    padding-right: 0;
+  }
+}

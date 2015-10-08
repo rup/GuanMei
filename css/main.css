@@ -293,9 +293,8 @@ input:focus {
   padding: 0 10px 10px 0;
   font-size: 0;
   width: 290px; }
-
-.grid-item img {
-  width: 100%; }
+  .grid-item img {
+    width: 100%; }
 
 .modal {
   position: fixed;
@@ -379,6 +378,10 @@ input:focus {
     text-align: center;
     height: 60px;
     background-color: #796a56; }
+
+.Grid-cell.left .grid-item {
+  width: auto;
+  padding-right: 0; }
 
 .Grid .Grid-cell .director_content .map {
   height: 300px; }

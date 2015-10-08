@@ -55,7 +55,7 @@
         </div>
         <!-- <img src="images/gallery/hint.png" alt="" class="hint"> -->
         <p class="slogan">我想牵着你的手，把爱印成回忆</p>
-        <div class="grid js-masonry" id="grid">
+        <div class="grid">
           <div class="grid-item width100">
             <a href="javascript:;">
               <img src="images/gallery/gallery-01.png" alt="亲子" class="kid video" url="http://player.youku.com/player.php/sid/XMTMzOTc0ODc0OA==/v.swf">
@@ -152,7 +152,7 @@
       $('body').css("overflow","auto")
     });
 
-    $("#grid .grid-item").click(function(){
+    $("#grid .grid-item, .Grid-cell.left .grid-item").click(function(){
       var $img = $(this).find('img')
       if ($img.is(".video")) {
         var url = $img.attr("url")
