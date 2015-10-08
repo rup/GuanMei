@@ -179,6 +179,21 @@ input:focus {
 .width1080 {
   width: 1080px; }
 
+.margintop80 {
+  margin-top: 80px; }
+
+.paddingleft10 {
+  padding-left: 10px; }
+
+.title {
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  font-weight: 300;
+  letter-spacing: 5px; }
+
 #index {
   position: relative;
   width: 100%;
@@ -344,9 +359,7 @@ input:focus {
   font-size: 18px;
   color: #fff;
   letter-spacing: 16px;
-  padding: 20px 0;
-  margin-bottom: 30px;
-  font-family: "Adobe Heiti Std R"; }
+  padding: 20px 0; }
 
 #grid .width100 {
   width: 100%;
@@ -386,9 +399,7 @@ input:focus {
   height: 300px; }
 
 .Grid .Grid-cell .director_content > img {
-  display: block;
-  margin-top: 80px;
-  padding-left: 10px; }
+  display: block; }
 
 .map {
   margin-bottom: 2em; }
