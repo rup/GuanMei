@@ -78,7 +78,7 @@ input:focus {
 .slogan {
   text-align: center;
   font-size: 18px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
   letter-spacing: 16px;
   padding: 20px 0; }
 
@@ -290,12 +290,11 @@ input:focus {
   width: 1080px;
   margin: 70px auto; }
   .content .logo img {
-    margin-bottom: 40px; }
+    margin-bottom: 35px; }
   .content .logo .slogan {
     letter-spacing: initial; }
     .content .logo .slogan span {
       letter-spacing: 25px;
-      color: rgba(255, 255, 255, 0.8);
       font-weight: 100; }
 
 .content .bar {
