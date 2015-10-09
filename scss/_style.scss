@@ -198,3 +198,12 @@ input:focus {
     font-weight: 300;
     letter-spacing: 5px;
 }    
+
+.slick-slider {
+    .slick-arrow {
+        &:before {
+            content: "";
+            font-family: inherit;
+        }
+    }
+}
