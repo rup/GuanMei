@@ -31,7 +31,31 @@ input {
 input:focus {
     outline: none;
 }
-
+.navigation{
+  display: flex;
+  position: absolute;
+  top:0;
+  left:50%;
+  width:1080px;
+  margin-left:-540px;
+  a{
+      flex:1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border:1px solid #fff;
+      text-align: center;
+      height:60px;
+      background-color:#796a56;
+  }
+} 
+.slogan{
+  text-align: center;
+  font-size:18px;
+  color:#fff;
+  letter-spacing: 16px;
+  padding:20px 0;
+}
 .Grid {
     display: flex;
     position: absolute;
