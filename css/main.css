@@ -289,6 +289,14 @@ input:focus {
   text-align: center;
   width: 1080px;
   margin: 70px auto; }
+  .content .logo img {
+    margin-bottom: 40px; }
+  .content .logo .slogan {
+    letter-spacing: initial; }
+    .content .logo .slogan span {
+      letter-spacing: 25px;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 100; }
 
 .content .bar {
   position: absolute;
