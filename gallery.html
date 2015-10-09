@@ -6,7 +6,7 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-  <div class="container">
+  <div class="page-gallery container">
     <img src="images/background.jpg" alt="">
     <div class="navigation">
       <a href="index.html">
@@ -56,14 +56,14 @@
         <!-- <img src="images/gallery/hint.png" alt="" class="hint"> -->
         <p class="slogan">我想牵着你的手，把爱印成回忆</p>
         <div class="grid">
-          <div class="grid-item width100">
+          <div class="grid-item">
             <a href="javascript:;">
               <img src="images/gallery/gallery-01.png" alt="亲子" class="kid video" url="http://player.youku.com/player.php/sid/XMTMzOTc0ODc0OA==/v.swf">
             </a>
           </div>
         </div>
       </div>
-      <div class="Grid-cell">
+      <div class="Grid-cell right">
         <div class="share">
           <a href="javascript:;">
             <img src="images/weibo.png" alt="微博">
@@ -120,19 +120,18 @@
     var changeCat = function(){
       var oHash = location.hash.replace("#","");
       if(oHash == ""){
-        $("#grid > div").show();
+        $(".grid > div").show();
       }else{
         var oClass = "." + oHash;
-        $("#grid img").parent().parent().hide();
+        $(".grid img").parent().parent().hide();
         $(oClass).parent().parent().show();
 
       }
 
       // fix bug
       setTimeout(function (argument) {
-        $('#grid').masonry({
-          itemSelector: '.grid-item',
-          columnWidth: 290
+        $('.Grid-cell.right .grid').masonry({
+          itemSelector: '.Grid-cell.right .grid　.grid-item'
         });
       }, 0)
     }
@@ -152,7 +151,7 @@
       $('body').css("overflow","auto")
     });
 
-    $("#grid .grid-item, .Grid-cell.left .grid-item").click(function(){
+    $(".grid .grid-item").click(function(){
       var $img = $(this).find('img')
       if ($img.is(".video")) {
         var url = $img.attr("url")
