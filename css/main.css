@@ -4,6 +4,14 @@
   padding: 0;
   box-sizing: border-box; }
 
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table; }
+
+.clear:after {
+  clear: both; }
+
 body {
   font-family: 'Helvetica Neue', Helvetica,'Microsoft YaHei', 微软雅黑, 宋体, Arial, sans-serif; }
 
@@ -12,9 +20,12 @@ html, body {
   height: 100%;
   background-color: #040000; }
 
-.container {
-  position: relative;
-  background-color: #040000; }
+body {
+  background: #040000 url(../images/background.jpg) repeat-y center top/100% auto; }
+  body:before,
+  body:after {
+    content: " ";
+    display: table; }
 
 .containerbg {
   position: relative;
@@ -242,9 +253,25 @@ input:focus {
   font-weight: 300;
   letter-spacing: 5px; }
 
-.slick-slider .slick-arrow:before {
-  content: "";
-  font-family: inherit; }
+.slick-slider .slick-arrow {
+  width: 32px;
+  height: 102px;
+  margin-top: -102px;
+  background: url(../images/arrow.png) no-repeat 0 0; }
+  .slick-slider .slick-arrow:before {
+    content: "";
+    font-family: inherit; }
+  .slick-slider .slick-arrow:hover, .slick-slider .slick-arrow:focus {
+    background: url(../images/arrow.png) no-repeat 0 0; }
+  .slick-slider .slick-arrow.slick-prev {
+    left: 10px;
+    z-index: 10000; }
+  .slick-slider .slick-arrow.slick-next {
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+        -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+    right: 10px;
+    z-index: 10000; }
 
 #index {
   position: relative;

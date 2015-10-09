@@ -3,6 +3,16 @@
     padding:0;
     box-sizing:border-box;
 }
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
 body {
     font-family: 'Helvetica Neue', Helvetica,'Microsoft YaHei', 微软雅黑, 宋体, Arial, sans-serif;
 }
@@ -11,10 +21,15 @@ html,body{
     height:100%;
     background-color:#040000;
 }
-.container{
-    position:relative;
-    background-color:#040000;
+body {
+    background: #040000 url(../images/background.jpg) repeat-y center top/100% auto;
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
 }
+
 .containerbg{
     position:relative;
     background-color:#040000;
@@ -199,11 +214,29 @@ input:focus {
     letter-spacing: 5px;
 }    
 
+$arrowH: 102;
+
 .slick-slider {
     .slick-arrow {
         &:before {
             content: "";
             font-family: inherit;
         }
+        width: 32px;
+        height: $arrowH + px;
+        margin-top: -$arrowH + px;
+        background: url(../images/arrow.png) no-repeat 0 0;
+        &:hover, &:focus {
+            background: url(../images/arrow.png) no-repeat 0 0;
+        }
+        &.slick-prev {
+            left: 10px;
+            z-index: 10000;
+        } 
+        &.slick-next {
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            right: 10px;
+            z-index: 10000;
+        } 
     }
 }
