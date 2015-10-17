@@ -9,6 +9,9 @@
     display: table;
 }
 
+a {
+    text-decoration: none;
+}
 .clear:after {
     clear: both;
 }
@@ -70,6 +73,28 @@ input:focus {
   color: rgba(255,255,255,0.9);
   letter-spacing: 16px;
   padding:20px 0;
+}
+.share {
+    a {
+        position: relative;
+        &:last-child {
+            &:before {
+                content: '';
+                position: absolute;
+                right: 0;
+                pointer-events: none;
+                display: none;
+                width: 100px;
+                height: 100px;
+                background: url(../images/qr.jpg) no-repeat 0 0/contain;
+            }
+            &:hover {
+                &:before {
+                    display: block;
+                }
+            }
+        }
+    }
 }
 .Grid {
     display: flex;
