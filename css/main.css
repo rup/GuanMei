@@ -241,6 +241,9 @@ input:focus {
   width: 1080px; }
 
 .margintop80 {
+  margin-top: 80px; }
+
+.margintop20 {
   margin-top: 20px; }
 
 .paddingleft10 {
@@ -393,16 +396,21 @@ input:focus {
   margin-bottom: 0; }
 
 .page-gallery .Grid {
-  width: 1090px; }
+  width: 1080px;
+  display: block; }
+  .page-gallery .Grid .Grid-cell.left {
+    float: left; }
   .page-gallery .Grid .Grid-cell.right {
-    width: 590px;
     float: right; }
+    .page-gallery .Grid .Grid-cell.right .inner {
+      width: 590px; }
 
 .page-gallery .grid-item {
   color: #fff;
   padding: 0 10px 10px 0;
   font-size: 0;
-  width: 295px; }
+  width: 295px;
+  margin: 0; }
   .page-gallery .grid-item img {
     width: 100%; }
 

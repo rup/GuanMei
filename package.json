@@ -1,7 +1,7 @@
 {
-  "name": "SkillBank-front",
+  "name": "GuanMei",
   "version": "0.0.1",
-  "description": "SkillBank",
+  "description": "GuanMei",
   "scripts": {
     "scss": "./bin/build-scss",
     "server": "browser-sync start --files \"css/*.css, *.html\" --server",

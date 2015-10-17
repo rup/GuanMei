@@ -1,9 +1,15 @@
 .page-gallery {
   .Grid {
-    width: 1090px;
+    width: 1080px;
+    display: block;
+    .Grid-cell.left {
+      float: left;
+    }
     .Grid-cell.right {
-      width: 590px;
       float: right;
+      .inner {
+        width: 590px;
+      }
     }
   }
   .grid-item { 
@@ -11,14 +17,13 @@
       padding: 0 10px 10px 0; 
       font-size: 0;
       width: 295px;
+      margin: 0;
       a {
       }
       img{
         width: 100%;
       }
   }
-
-
 
   #grid .width100{
       width:100%;
