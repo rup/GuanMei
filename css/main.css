@@ -94,8 +94,8 @@ input:focus {
     z-index: 9999;
     pointer-events: none;
     display: none;
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     background: url(../images/qr.jpg) no-repeat 0 0/contain; }
   .share a:last-child:hover:before {
     display: block; }
