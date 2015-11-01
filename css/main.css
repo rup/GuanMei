@@ -90,12 +90,12 @@ input:focus {
   .share a:last-child:before {
     content: '';
     position: absolute;
-    right: 0;
+    right: -90px;
     z-index: 9999;
     pointer-events: none;
     display: none;
-    width: 130px;
-    height: 130px;
+    width: 160px;
+    height: 160px;
     background: url(../images/qr.jpg) no-repeat 0 0/contain; }
   .share a:last-child:hover:before {
     display: block; }
