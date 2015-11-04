@@ -90,7 +90,7 @@ input:focus {
   .share a:last-child:before {
     content: '';
     position: absolute;
-    right: -90px;
+    right: 80px;
     z-index: 9999;
     pointer-events: none;
     display: none;
