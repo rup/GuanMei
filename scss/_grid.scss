@@ -170,6 +170,12 @@ body {
 	margin-left: 8.33%
 }
 
+.show-on-mobile {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
 @media handheld, only screen and (max-width: 767px) {
 	.grid {
 		width: 100%;
@@ -276,4 +282,11 @@ body {
 		width: 0;
 		height: 0;
 	}
+
+	.show-on-mobile {
+		display: block !important;
+		width: auto !important;
+		height: auto !important;
+	}
+
 }
