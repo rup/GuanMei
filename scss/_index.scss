@@ -13,7 +13,7 @@
 }
 .content .logo{
   text-align: center;
-  width:1080px;
+  max-width:1080px;
   margin:70px auto;
   img {
     margin-bottom: 35px;
@@ -35,19 +35,17 @@
   background: rgba(255,255,255,.5);
 }
 .content .bar .bar-tab{
-  width:1080px;
   height:100%;
   margin:0 auto;
 }
 .content .bar .bar-tab .tab-item{
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display:flex;
   justify-content:center;
   align-items:center;
-  width:360px;
   height:100%;
   float:left;
   position:relative;
