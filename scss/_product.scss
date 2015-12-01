@@ -1,0 +1,21 @@
+#product {
+	.container {
+		.Grid {
+			.slick-slider {
+				width: 1080px;
+			}
+		}
+	}
+	@media handheld, only screen and (max-width: 767px) {
+		.container {
+			.Grid {
+				.slick-slider {
+					width: 80vw;
+					margin: 0 auto;
+				}
+			}
+		}
+
+
+	}
+}
