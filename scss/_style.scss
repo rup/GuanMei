@@ -37,40 +37,45 @@ body {
     display: none;
 }
 
+.wrapper {
+    width: 100%;
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+        > img {
+            width: 100%;
+            display: block;
+        }
+        .navigation{
+            display: flex;
+            a {
+                flex:1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border:1px solid #fff;
+                text-align: center;
+                height:60px;
+                background-color:#796a56;
+            }
+        } 
+
+    }
+}
+
 .containerbg{
     position:relative;
     background-color:#040000;
     min-height:100%;
     background: url(../images/background.jpg) no-repeat top left/cover;
 }
-.container > img{
-    width:100%;
-    display: block;
-}
+
 input {
     font-size: 14px;
 }
 input:focus {
     outline: none;
 }
-.navigation{
-  display: flex;
-  position: absolute;
-  top:0;
-  left:50%;
-  width:1080px;
-  margin-left:-540px;
-  a{
-      flex:1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border:1px solid #fff;
-      text-align: center;
-      height:60px;
-      background-color:#796a56;
-  }
-} 
 .slogan{
   text-align: center;
   font-size:18px;
@@ -102,13 +107,6 @@ input:focus {
     }
 }
 .Grid {
-    display: flex;
-    position: absolute;
-    top:60px;
-    left:50%;
-    width:1080px;
-    margin-left:-540px;
-    padding-bottom:50px;
 }
 .Grid-cell {
     position:relative;
@@ -120,6 +118,10 @@ input:focus {
     height:270px;
     width: 500px;
     background:url(../images/opacityBg.png) repeat;
+}
+.Grid .right{
+    width: 580px;
+    float: right;
 }
 .Grid .hint{
     position: absolute;

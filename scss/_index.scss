@@ -117,18 +117,21 @@
       .logo {
         margin: 50px auto 20px;
         .slogan {
-          font-size: 10px;
+          font-size: 3vw;
           span {
             letter-spacing: 6px;
 
           }
         }
         img {
-          margin-bottom: 10px;
+          margin-bottom: 0;
+          width: 60%;
         }
       }
       .bar {
+        position: static;
         padding: 30px 0;
+        margin-top: 0;
         .bar-tab {
           .tab-item {
             height: 80px;
@@ -148,7 +151,6 @@
   .slick-list {
     .pic.slick-slide {
       &:first-child {
-
         background-position: 20% 0;
         background-scale: 60%;
       }
