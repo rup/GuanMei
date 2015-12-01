@@ -40,6 +40,7 @@ body {
 .wrapper {
     width: 100%;
     .container {
+        position: relative;
         width: 1080px;
         margin: 0 auto;
         > img {
@@ -273,5 +274,10 @@ $arrowH: 102;
             right: 10px;
             z-index: 10000;
         } 
+    }
+    .slick-slide {
+        img {
+            width: 100%
+        }
     }
 }

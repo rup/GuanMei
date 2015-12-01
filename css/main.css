@@ -246,6 +246,7 @@ body {
 .wrapper {
   width: 100%; }
   .wrapper .container {
+    position: relative;
     width: 1080px;
     margin: 0 auto; }
     .wrapper .container > img {
@@ -498,6 +499,9 @@ input:focus {
     right: 10px;
     z-index: 10000; }
 
+.slick-slider .slick-slide img {
+  width: 100%; }
+
 #index {
   position: relative;
   width: 100%;
@@ -704,9 +708,19 @@ input:focus {
   width: 1080px; }
 
 @media handheld, only screen and (max-width: 767px) {
-  #product .container .Grid .slick-slider {
-    width: 80vw;
-    margin: 0 auto; } }
+  #product .container {
+    position: static; }
+    #product .container .Grid {
+      position: absolute;
+      left: 10%;
+      margin-top: 100px; }
+      #product .container .Grid .slick-slider {
+        width: 80vw; }
+        #product .container .Grid .slick-slider button {
+          width: 8px;
+          height: 51px;
+          margin-top: -25.5px;
+          background-size: cover; } }
 
 .Grid .Grid-cell .director_content .map {
   height: 300px; }
