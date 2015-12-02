@@ -713,7 +713,8 @@ input:focus {
     #product .container .Grid {
       position: absolute;
       left: 10%;
-      margin-top: 100px; }
+      top: 50%;
+      margin-top: -100px; }
       #product .container .Grid .slick-slider {
         width: 80vw; }
         #product .container .Grid .slick-slider button {
@@ -736,6 +737,8 @@ input:focus {
   line-height: 165%; }
 
 @media handheld, only screen and (max-width: 767px) {
+  body {
+    background: #040000 url(../images/background.jpg) no-repeat 22% top/183% auto; }
   .share {
     display: none; }
   .wrapper .container {

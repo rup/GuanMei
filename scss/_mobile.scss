@@ -1,4 +1,7 @@
 @media handheld, only screen and (max-width: 767px) {
+	body {
+		background: #040000 url(../images/background.jpg) no-repeat 22% top/183% auto;
+	}
 	.share {
 		display: none;
 	}

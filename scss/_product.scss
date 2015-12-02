@@ -12,7 +12,8 @@
 			.Grid {
 				position: absolute;
 				left: 10%;
-				margin-top: 100px;
+    			top: 50%;
+				margin-top: -100px;
 				.slick-slider {
 					width: 80vw;
 					button {
@@ -25,7 +26,6 @@
 				}
 			}
 		}
-
 
 	}
 }
