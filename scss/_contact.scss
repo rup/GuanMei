@@ -17,11 +17,21 @@
 
 #contact {
 	@media handheld, only screen and (max-width: 767px) {
+
 		.container {
 			.Grid {
 				.Grid-cell {
 					&.right {
 						padding: 0 16%;
+						.show-on-mobile {
+							
+							>img {
+								margin-bottom: 1em;
+							}
+							.btn {
+								margin-bottom: 1em;
+							}
+						}
 					}
 				}
 			}

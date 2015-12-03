@@ -757,7 +757,11 @@ input:focus {
 
 @media handheld, only screen and (max-width: 767px) {
   #contact .container .Grid .Grid-cell.right {
-    padding: 0 16%; } }
+    padding: 0 16%; }
+    #contact .container .Grid .Grid-cell.right .show-on-mobile > img {
+      margin-bottom: 1em; }
+    #contact .container .Grid .Grid-cell.right .show-on-mobile .btn {
+      margin-bottom: 1em; } }
 
 @media handheld, only screen and (max-width: 767px) {
   body {
