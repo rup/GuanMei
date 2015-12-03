@@ -14,3 +14,17 @@
 	line-height: 165%;
 }
 
+
+#contact {
+	@media handheld, only screen and (max-width: 767px) {
+		.container {
+			.Grid {
+				.Grid-cell {
+					&.right {
+						padding: 0 16%;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,79 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>观美--Product</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="bower_components/slick/slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="bower_components/slick/slick/slick-theme.css">
+    <title>观美--Product</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/slick/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/slick/slick/slick-theme.css">
 </head>
 <body>
-  <div class="wrapper" id="product">
-    <div class="container">
-      <div class="navigation">
-        <a href="index.html">
-          <img src="images/home.png" alt="home">
-        </a>
-        <a href="gallery.html">
-          <img src="images/gallery.png" width="90px" alt="gallery">
-        </a>
-        <a href="product.html">
-          <img src="images/procduct.png" width="140px" alt="procduct">
-        </a>
-        <a href="contact.html">
-          <img src="images/contactus.png" width="120px" alt="contactus">
-        </a>
-      </div>
-      <div class="Grid">
-        
-        <div class="Grid-cell">
+    <div class="wrapper" id="product">
+        <div class="container">
+            <div class="navigation">
+                <span class="menu-toggle show-on-mobile">
+                    <img src="images/icon-menu.png">
+                </span>
+                <img class="logo" src="images/logo-s.png">
+                <ul>
+                    <li> <a href="index.html">
+                        <img src="images/home.png" alt="home">
+                    </a> </li>
+                    <li> <a href="gallery.html">
+                        <img src="images/gallery.png" width="90px" alt="gallery">
+                    </a></li>
+                    <li> <a href="product.html">
+                        <img src="images/procduct.png" width="140px" alt="procduct">
+                    </a></li>
+                    <li> <a href="contact.html">
+                        <img src="images/contactus.png" width="120px" alt="contactus">
+                    </a></li>
+                </ul>
+            </div>
+            <div class="Grid">
+                
+                <div class="Grid-cell">
 
-          <div class="slick-slider">
-            
-            <div class="pic">
-              <img src="images/slide/slide01.jpg">
+                    <div class="slick-slider">
+                        
+                        <div class="pic">
+                            <img src="images/slide/slide01.jpg">
+                        </div>
+                        <div class="pic">
+                            <img src="images/slide/slide02.jpg">
+                        </div>
+                        <div class="pic">
+                            <img src="images/slide/slide03.jpg">
+                        </div>
+                        <div class="pic">
+                            <img src="images/slide/slide04.jpg">
+                        </div>
+                        <div class="pic">
+                            <img src="images/slide/slide05.jpg">
+                        </div>
+                        <div class="pic">
+                            <img src="images/slide/slide06.jpg">
+                        </div>
+                    </div>
+                    <div class="share">
+                        <a href="http://weibo.com/u/3939998274" target="_blank">
+                            <img src="images/weibo.png" alt="微博">
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images/wechat.png" alt="微信">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="pic">
-              <img src="images/slide/slide02.jpg">
-            </div>
-            <div class="pic">
-              <img src="images/slide/slide03.jpg">
-            </div>
-            <div class="pic">
-              <img src="images/slide/slide04.jpg">
-            </div>
-            <div class="pic">
-              <img src="images/slide/slide05.jpg">
-            </div>
-            <div class="pic">
-              <img src="images/slide/slide06.jpg">
-            </div>
-          </div>
-          <div class="share">
-            <a href="http://weibo.com/u/3939998274" target="_blank">
-              <img src="images/weibo.png" alt="微博">
-            </a>
-            <a href="javascript:;">
-              <img src="images/wechat.png" alt="微信">
-            </a>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <script src="bower_components/jQuery/jquery-1.11.3.min.js"></script>
-  <script src="bower_components/slick/jquery-migrate-1.2.1.min.js"></script>
-  <script src="bower_components/slick/slick/slick.min.js"></script>
-  <script type="text/javascript">
-    $('.slick-slider').slick({
-      dots: false,
-      infinite: true,
-      speed: 1000,
-      fade: true,
-      autoplay:true,
-      cssEase: 'linear'
-    });
-  </script>
+    <script src="bower_components/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="bower_components/slick/jquery-migrate-1.2.1.min.js"></script>
+    <script src="bower_components/slick/slick/slick.min.js"></script>
+    <script src="js/common.js"></script>
+    <script type="text/javascript">
+        $('.slick-slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 1000,
+            fade: true,
+            autoplay:true,
+            cssEase: 'linear'
+        });
+    </script>
 </body>
 </html>

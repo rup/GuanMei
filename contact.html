@@ -3,24 +3,31 @@
 <head>
     <title>观美--Contact Us</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="container">
             <div class="navigation">
-                <a href="index.html">
-                    <img src="images/home.png" alt="home">
-                </a>
-                <a href="gallery.html">
-                    <img src="images/gallery.png" width="90px" alt="gallery">
-                </a>
-                <a href="product.html">
-                    <img src="images/procduct.png" width="140px" alt="procduct">
-                </a>
-                <a href="contact.html">
-                    <img src="images/contactus.png" width="120px" alt="contactus">
-                </a>
+                <span class="menu-toggle show-on-mobile">
+                    <img src="images/icon-menu.png">
+                </span>
+                <img class="logo" src="images/logo-s.png">
+                <ul>
+                    <li> <a href="index.html">
+                        <img src="images/home.png" alt="home">
+                    </a> </li>
+                    <li> <a href="gallery.html">
+                        <img src="images/gallery.png" width="90px" alt="gallery">
+                    </a></li>
+                    <li> <a href="product.html">
+                        <img src="images/procduct.png" width="140px" alt="procduct">
+                    </a></li>
+                    <li> <a href="contact.html">
+                        <img src="images/contactus.png" width="120px" alt="contactus">
+                    </a></li>
+                </ul>
             </div>
             <div class="Grid">
                 <div class="Grid-cell right">
@@ -33,12 +40,26 @@
                         </a>
                     </div>
                     <div class="director_content margintop20 paddingleft10">
-                        <div class="map" id="map"  style="width: 100%; height: 220px;"> </div>
-                        <div class="map-info">
-                            地址：上海市徐汇区汾阳路30号4楼 （毗邻上海音乐学院）<br>
-                            咨询电话：4008515667<br>
-                            咨询邮箱：guanmei@flyingmedia.cn
+                        <div class="hide-on-mobile">
                             
+                            <div class="map" id="map"  style="width: 100%; height: 220px;"> </div>
+                            <div class="map-info">
+                                地址：上海市徐汇区汾阳路30号4楼 （毗邻上海音乐学院）<br>
+                                咨询电话：4008515667<br>
+                                咨询邮箱：guanmei@flyingmedia.cn
+                                
+                            </div>
+                        </div>
+
+                        <div class="show-on-mobile">
+                            <h2>CONTACT US</h2>
+                            <img src="images/qr.jpg">
+                            <a href="" class="btn">咨询电话：4008515667</a>
+                            <a href="" class="btn">咨询邮箱：guanmei@flyingmedia.cn</a>
+                            <div class="map" id="map"  style="width: 100%; height: 220px;"> </div>
+                            <div class="map-info">
+                                地址：上海市徐汇区汾阳路30号4楼 （毗邻上海音乐学院
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,6 +104,8 @@
     </div>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=995714385d1885fe2aa142088476bdcd"></script>
     <script type="text/javascript" src="js/MapBaidu_min.js"></script>
+    <script src="bower_components/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
     <script type="text/javascript">  
         function  map(){
             new BaiduMap("map",{address:"上海市徐汇区汾阳路30号4楼",province:"上海市",isControl:true,info:"上海市<br/>地址:上海市徐汇区汾阳路30号4楼<br/>联系方式: 4008515667<br/>E-Mail：guanmei@flyingmedia.cn",size:12,icon:[23,63,"icon.png"]});

@@ -48,16 +48,34 @@ body {
             display: block;
         }
         .navigation{
-            display: flex;
-            a {
-                flex:1;
+            height:60px;
+            background-color:#796a56;
+            .menu-toggle {
+                img {
+                    width: 28px;
+                }
+            }
+            img.logo {
+                width: 84px;
+                display: none;
+            }
+            ul {
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                border:1px solid #fff;
-                text-align: center;
-                height:60px;
                 background-color:#796a56;
+                li {
+                    flex:1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border:1px solid #fff;
+                    text-align: center;
+                    height:60px;
+                    a {
+                        img {
+                            height: 28px;
+                        }
+                    }
+                }
             }
         } 
 
@@ -280,4 +298,14 @@ $arrowH: 102;
             width: 100%
         }
     }
+}
+
+.btn {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #4b4134;
+    padding: 0.5em;
+    font-size: 12px;
+    background: rgba(80,70,56,0.7);
+    color: #fff;
 }

@@ -8,6 +8,46 @@
 	.wrapper {
 		.container {
 			width: 100%;
+			.navigation {
+				display: flex;
+	            justify-content: space-between;
+	            align-items: center;
+				padding: 0 25px;
+				img.logo {
+					display: inline-block;
+				}
+				ul {
+					display: none;
+					position: absolute;
+					left: 0;
+					top: 60px;
+					z-index: 9;
+					li {
+						width: 180px;
+					}
+				}
+			}
+			.Grid {
+				.Grid-cell {
+					&.left {
+						display: none;
+					}
+					&.right {
+						width: 100%;
+						padding: 0 8%;
+						h2 {
+							text-align: center;
+							font-size: 36px;
+							color: #fff;
+							font-weight: 200;
+							margin-bottom: 0.6em;
+						}
+						img {
+							max-width: 100%;
+						}
+					}
+				}
+			}
 		}
 	}
 

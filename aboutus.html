@@ -3,25 +3,33 @@
 <head>
     <title>观美--About Us</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="container">
             <div class="navigation">
-                <a href="index.html">
-                    <img src="images/home.png" alt="home">
-                </a>
-                <a href="gallery.html">
-                    <img src="images/gallery.png" width="90px" alt="gallery">
-                </a>
-                <a href="product.html">
-                    <img src="images/procduct.png" width="140px" alt="procduct">
-                </a>
-                <a href="contact.html">
-                    <img src="images/contactus.png" width="120px" alt="contactus">
-                </a>
+                <span class="menu-toggle show-on-mobile">
+                    <img src="images/icon-menu.png">
+                </span>
+                <img class="logo show-on-mobile" src="images/logo-s.png">
+                <ul>
+                    <li> <a href="index.html">
+                        <img src="images/home.png" alt="home">
+                    </a> </li>
+                    <li> <a href="gallery.html">
+                        <img src="images/gallery.png" width="90px" alt="gallery">
+                    </a></li>
+                    <li> <a href="product.html">
+                        <img src="images/procduct.png" width="140px" alt="procduct">
+                    </a></li>
+                    <li> <a href="contact.html">
+                        <img src="images/contactus.png" width="120px" alt="contactus">
+                    </a></li>
+                </ul>
             </div>
+
             <div class="Grid">
                 
                 <div class="Grid-cell right">
@@ -34,6 +42,7 @@
                         </a>
                     </div>
                     <div class="director_content margintop20 paddingleft10">
+                        <h2 class="show-on-mobile">ABOUT US</h2>
                         <img src="images/aboutus/about-usInfo.png" alt="">
                     </div>
                 </div>
@@ -73,5 +82,7 @@
             </div>
         </div>
     </div>
+    <script src="bower_components/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
 </body>
 </html>
