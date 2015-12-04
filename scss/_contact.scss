@@ -29,7 +29,22 @@
 								margin-bottom: 1em;
 							}
 							.btn {
-								margin-bottom: 1em;
+								margin-bottom: 1.5em;
+							}
+							.map-container {
+								position: relative;
+								a {
+									position: absolute;
+									width: 100%;
+									height: 100%;
+									z-index: 1;
+								}
+								.map {
+									margin-bottom: 10px;
+								}
+							}
+							.map-info {
+								font-size: 8px;
 							}
 						}
 					}

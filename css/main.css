@@ -516,10 +516,17 @@ input:focus {
   width: 100%;
   display: inline-block;
   border: 1px solid #4b4134;
-  padding: 0.5em;
-  font-size: 12px;
-  background: rgba(80, 70, 56, 0.7);
+  padding: 0.5em 0.5em 0.5em 4em;
+  font-size: 9px;
+  background-color: rgba(80, 70, 56, 0.7);
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  background-size: 15px auto;
   color: #fff; }
+  .btn.btn-phone {
+    background-image: url(../images/icon-phone.png); }
+  .btn.btn-msg {
+    background-image: url(../images/icon-msg.png); }
 
 #index {
   position: relative;
@@ -761,7 +768,18 @@ input:focus {
     #contact .container .Grid .Grid-cell.right .show-on-mobile > img {
       margin-bottom: 1em; }
     #contact .container .Grid .Grid-cell.right .show-on-mobile .btn {
-      margin-bottom: 1em; } }
+      margin-bottom: 1.5em; }
+    #contact .container .Grid .Grid-cell.right .show-on-mobile .map-container {
+      position: relative; }
+      #contact .container .Grid .Grid-cell.right .show-on-mobile .map-container a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1; }
+      #contact .container .Grid .Grid-cell.right .show-on-mobile .map-container .map {
+        margin-bottom: 10px; }
+    #contact .container .Grid .Grid-cell.right .show-on-mobile .map-info {
+      font-size: 8px; } }
 
 @media handheld, only screen and (max-width: 767px) {
   body {
@@ -769,7 +787,8 @@ input:focus {
   .share {
     display: none; }
   .wrapper .container {
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 3em; }
     .wrapper .container .navigation {
       display: -webkit-box;
       display: -webkit-flex;
@@ -801,7 +820,7 @@ input:focus {
       padding: 0 8%; }
       .wrapper .container .Grid .Grid-cell.right h2 {
         text-align: center;
-        font-size: 36px;
+        font-size: 32px;
         color: #fff;
         font-weight: 200;
         margin-bottom: 0.6em; }

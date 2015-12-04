@@ -304,8 +304,21 @@ $arrowH: 102;
     width: 100%;
     display: inline-block;
     border: 1px solid #4b4134;
-    padding: 0.5em;
-    font-size: 12px;
-    background: rgba(80,70,56,0.7);
+    padding: 0.5em 0.5em 0.5em 4em;
+    font-size: 9px;
+    background-color: rgba(80,70,56,0.7);
+    background-repeat: no-repeat;
+    background-position: 16px center;
+    background-size: 15px auto;
     color: #fff;
+
+    &.btn-phone {
+        background-image: url(../images/icon-phone.png);
+    }
+    &.btn-msg {
+        background-image: url(../images/icon-msg.png);
+    }
+
+
+
 }
