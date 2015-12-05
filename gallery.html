@@ -3,8 +3,11 @@
 <head>
     <title>观美--Gallery</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/slick/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/slick/slick/slick-theme.css">
+
 </head>
 <body>
     <div class="page-gallery wrapper">
@@ -17,20 +20,27 @@
                 <ul>
                     <li> <a href="index.html">
                         <img src="images/home.png" alt="home">
+                        <span>Home</span>
                     </a> </li>
                     <li> <a href="gallery.html">
                         <img src="images/gallery.png" width="90px" alt="gallery">
+                        <span>Gallery</span>
                     </a></li>
                     <li> <a href="product.html">
                         <img src="images/procduct.png" width="140px" alt="procduct">
+                        <span>Procduct</span>
                     </a></li>
                     <li> <a href="contact.html">
                         <img src="images/contactus.png" width="120px" alt="contactus">
+                        <span>Contact us</span>
+                    </a></li>
+                    <li class="show-on-mobile"> <a href="aboutus.html">
+                        <span>About us</span>
                     </a></li>
                 </ul>
             </div>
 
-            <div class="Grid">
+            <div class="Grid hide-on-mobile">
                 <div class="Grid-cell left">
                     <div class="leftNav nav-list">
                         <a href="/gallery.html#">
@@ -64,16 +74,16 @@
                     <!-- <img src="images/gallery/hint.png" alt="" class="hint"> -->
                     <p class="slogan">我想牵着你的手，把爱映成回忆</p>
                     <div class="grid">
-                    <div class="grid-item">
-                                <a href="javascript:;">
-                                    <img src="images/gallery/kid zeshao.jpg" alt="亲子" class="kid video" url="http://static.video.qq.com/TPout.swf?vid=j0167yc0km7&auto=0">
-                                </a>
-                            </div>
-                            <div class="grid-item">
-                                <a href="javascript:;">
-                                    <img src="images/gallery/love04.jpg" alt="婚纱" class="love">
-                                </a>
-                            </div>
+                        <div class="grid-item">
+                            <a href="javascript:;">
+                                <img src="images/gallery/kid zeshao.jpg" alt="亲子" class="kid video" url="images/coach.mp4">
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="javascript:;">
+                                <img src="images/gallery/love04.jpg" alt="婚纱" class="love">
+                            </a>
+                        </div>
 
 
 
@@ -87,21 +97,21 @@
                         </div>
 
 
-                            <div class="grid-item">
-                                <a href="javascript:;">
-                                    <img src="images/gallery/love05.jpg" alt="婚纱" class="love">
-                                </a>
-                            </div>
+                        <div class="grid-item">
+                            <a href="javascript:;">
+                                <img src="images/gallery/love05.jpg" alt="婚纱" class="love">
+                            </a>
+                        </div>
                         <div class="grid-item">
                             <a href="javascript:;">
                                 <img src="images/gallery/friend02.jpg" alt="闺蜜" class="friend">
                             </a>
                         </div>
-                            <div class="grid-item">
-                                <a href="javascript:;">
-                                    <img src="images/gallery/love forget.jpg" alt="婚纱" class="love video" url="http://player.youku.com/player.php/sid/XNjQ4OTg2NjMy/v.swf">
-                                </a>
-                            </div>
+                        <div class="grid-item">
+                            <a href="javascript:;">
+                                <img src="images/gallery/love forget.jpg" alt="婚纱" class="love video" url="http://player.youku.com/player.php/sid/XNjQ4OTg2NjMy/v.swf">
+                            </a>
+                        </div>
 
                     </div>
                 </div>
@@ -256,12 +266,41 @@
                     </div>
                 </div>
             </div>
+
+            <div class="grid show-on-mobile">
+                <div class="col-1-1"></div>  
+            </div>
+
         </div>
     </div>
     <script src="bower_components/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="bower_components/slick/jquery-migrate-1.2.1.min.js"></script>
+    <script src="bower_components/slick/slick/slick.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/common.js"></script>
     <script type="text/javascript">
+        var browser={
+            versions:function(){
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,//火狐内核
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                    iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1, //是否iPad
+                    webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                    weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）
+                    qq: u.match(/\sQQ/i) == " qq" //是否QQ
+                };
+            }(),
+            language:(navigator.browserLanguage || navigator.language).toLowerCase()
+        }
+
+
         // masonry
         function changeCat(){
             var oHash = location.hash.replace("#","");
@@ -294,18 +333,25 @@
                                 "</div>" +
                             "</div>";
         $('body').append(tpl);
-        $("#myModal").click(function a() { 
+        $("#myModal").click(function() { 
             $("#myModal").hide(); 
             $('body').css("overflow","auto")
         });
 
         $(".grid .grid-item").click(function(){
             var $img = $(this).find('img')
-            if ($img.is(".video")) {
-                var url = $img.attr("url")
-                var video = '<embed src="' + url + '" allowFullScreen="true" quality="high"' + 
-                        ' width="480" height="400" align="middle" allowScriptAccess="always" ' + 
-                        'type="application/x-shockwave-flash"></embed>';
+            var url = $img.attr('url')
+            if (url) {
+                var video = ''
+                if(url.indexOf('.swf')>-1) {
+                    video = '<embed src="' + url + '" allowFullScreen="true" quality="high"' + 
+                            ' width="480" height="400" align="middle" allowScriptAccess="always" ' + 
+                            'type="application/x-shockwave-flash"></embed>';
+                } else{
+                    video = '<video width="480" autoplayY controls poster="' + $img.attr('src') + '">' +
+                                '<source src="' + url + '" type="video/mp4">' +
+                            '</video>';
+                }
                 $('.modal-content').html(video)
             } else {
                 var srcImg = $img.attr("src"); 
@@ -315,6 +361,35 @@
             $("#myModal").show();
             $('body').css('overflow','hidden')
         });
+
+        if(browser.versions.mobile||browser.versions.android||browser.versions.ios){ 
+            var $kids = $('img.kid')
+            var $friends = $('img.friend')
+            var $loves = $('img.love')
+            var sets = [$kids, $friends, $loves]
+            sets.forEach(function (set) {
+                var $pics = $.map(set, function (img,i) {
+                    return $('<div class="pic" />').append(img)
+                })
+                var $slick = $('<div class="slick-slider" />').append($pics)
+                    
+                $slick.slick({
+                    dots: false,
+                    infinite: true,
+                    speed: 600,
+                    fade: false,
+                    autoplay:false,
+                    cssEase: 'linear'
+                }).appendTo('.grid.show-on-mobile .col-1-1')
+                    
+
+            })
+
+
+
+
+        }
+
             
     </script>
 </body>

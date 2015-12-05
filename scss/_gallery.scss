@@ -1,7 +1,6 @@
 .page-gallery {
   .Grid {
     width: 1080px;
-    display: block;
     .Grid-cell.left {
       float: left;
     }
@@ -12,17 +11,19 @@
       }
     }
   }
-  .grid-item { 
-      color: #fff;
-      padding: 0 10px 10px 0; 
-      font-size: 0;
-      width: 295px;
-      margin: 0;
-      a {
-      }
-      img{
-        width: 100%;
-      }
+  .grid {
+    .grid-item { 
+        color: #fff;
+        padding: 0 10px 10px 0; 
+        font-size: 0;
+        width: 295px;
+        margin: 0;
+        a {
+        }
+        img{
+          width: 100%;
+        }
+    }
   }
 
   #grid .width100{
@@ -32,10 +33,21 @@
 
 
   .Grid-cell.left {
-    .grid-item {
-      width: auto;
+    .grid {
+      min-width: 500px;
+      .grid-item {
+        width: auto;
+      }
     }
   }
+
+  @media handheld, only screen and (max-width: 767px) {
+
+    .grid.show-on-mobile {
+      padding-top: 1em;
+    }
+  }
+
 
 }
 
@@ -69,5 +81,6 @@
    justify-content: center;
    img {
       width: 100%;
-   }
+  }
 }
+

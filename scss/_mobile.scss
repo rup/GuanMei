@@ -5,6 +5,18 @@
 	.share {
 		display: none;
 	}
+	.slick-slider {
+		button.slick-arrow {
+			width: 8px;
+			height: 51px;
+			margin-top: -25.5px;
+			background: url(../images/arrow.png) no-repeat 0 0/cover;
+			&:hover, &:focus {
+	            background: url(../images/arrow.png) no-repeat 0 0/cover;
+	        }
+
+		}
+	}
 	.wrapper {
 		.container {
 			width: 100%;
@@ -24,7 +36,21 @@
 					top: 60px;
 					z-index: 9;
 					li {
-						width: 180px;
+						width: 160px;
+						&:last-child {
+							display: flex!important;
+						}
+						a {
+							color: #fff;
+							font-size: 20px;
+							font-weight: 200;
+							img {
+								display: none;
+							}
+							span {
+								display: inline;
+							}
+						}
 					}
 				}
 			}

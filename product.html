@@ -19,15 +19,22 @@
                 <ul>
                     <li> <a href="index.html">
                         <img src="images/home.png" alt="home">
+                        <span>Home</span>
                     </a> </li>
                     <li> <a href="gallery.html">
                         <img src="images/gallery.png" width="90px" alt="gallery">
+                        <span>Gallery</span>
                     </a></li>
                     <li> <a href="product.html">
                         <img src="images/procduct.png" width="140px" alt="procduct">
+                        <span>Procduct</span>
                     </a></li>
                     <li> <a href="contact.html">
                         <img src="images/contactus.png" width="120px" alt="contactus">
+                        <span>Contact us</span>
+                    </a></li>
+                    <li class="show-on-mobile"> <a href="aboutus.html">
+                        <span>About us</span>
                     </a></li>
                 </ul>
             </div>
@@ -76,8 +83,8 @@
         $('.slick-slider').slick({
             dots: false,
             infinite: true,
-            speed: 1000,
-            fade: true,
+            speed: 600,
+            fade: false,
             autoplay:true,
             cssEase: 'linear'
         });

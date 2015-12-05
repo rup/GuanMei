@@ -70,9 +70,15 @@ body {
                     border:1px solid #fff;
                     text-align: center;
                     height:60px;
+                    &.show-on-mobile {
+                        display: none;
+                    }
                     a {
                         img {
                             height: 28px;
+                        }
+                        span {
+                            display: none;
                         }
                     }
                 }
@@ -285,12 +291,12 @@ $arrowH: 102;
         }
         &.slick-prev {
             left: 10px;
-            z-index: 10000;
+            z-index: 1;
         } 
         &.slick-next {
             transform: matrix(-1, 0, 0, 1, 0, 0);
             right: 10px;
-            z-index: 10000;
+            z-index: 1;
         } 
     }
     .slick-slide {
