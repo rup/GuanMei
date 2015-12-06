@@ -3,6 +3,10 @@
 		.Grid {
 			.slick-slider {
 				width: 1080px;
+				.slick-slide {
+					height: 775px;
+					background: url(../images/none.gif) no-repeat center center/contain;
+				}
 			}
 		}
 	}
@@ -22,6 +26,9 @@
 						margin-top: -25.5px;
 						background-size: cover;
 
+					}
+					.slick-slide {
+						height: (77500/1080)+vw;
 					}
 				}
 			}
