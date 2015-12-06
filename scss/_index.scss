@@ -7,6 +7,7 @@
         left:0;
         width:100%;
         min-height:100vh;
+        padding-bottom: 30px;
     }
     .content .logo{
         text-align: center;
@@ -102,8 +103,9 @@
         height:100%;
     }
     .slick-slider{
-        position: absolute;
+        position: fixed;
         width: 100%;
+        height: 100%;
         margin-bottom: 0;
     }
 

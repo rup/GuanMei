@@ -1,6 +1,6 @@
 @media handheld, only screen and (max-width: 767px) {
 	body {
-		background: #040000 url(../images/background.jpg) no-repeat 22% top/183% auto;
+		background: #040000 url(../images/background.jpg) no-repeat fixed 22% top/183% auto;
 	}
 	.share {
 		display: none;
@@ -27,6 +27,7 @@
 	.wrapper {
 		.container {
 			width: 100%;
+			min-height: 100vh;
 			padding-bottom: 3em;
 			.navigation {
 				display: flex;
