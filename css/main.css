@@ -802,6 +802,9 @@ input:focus {
     background: url(../images/arrow.png) no-repeat 0 0/cover; }
     .slick-slider button.slick-arrow:hover, .slick-slider button.slick-arrow:focus {
       background: url(../images/arrow.png) no-repeat 0 0/cover; }
+  .slick-slider .slick-slide img {
+    width: auto;
+    margin: 0 auto; }
   .wrapper .container {
     width: 100%;
     padding-bottom: 3em; }
