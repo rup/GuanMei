@@ -320,10 +320,7 @@
                 columnWidth: 295
             })
         }
-        window.onhashchange = changeCat
-        window.onload = function() {
-            changeCat()
-        }
+        window.onhashchange = window.onload = changeCat
 
         // modal
         var tpl = "<div id='myModal' class='modal fade'>" +
@@ -367,15 +364,34 @@
             var $friends = $('img.friend')
             var $loves = $('img.love')
             var sets = [$kids, $friends, $loves]
+
+            var w = $('body').width() - 40
+            var h = parseInt(w*0.6)
+
             sets.forEach(function (set) {
-                var $pics = $.map(set, function (img,i) {
-                    return $('<div class="pic" />').append(img)
+                var $pics = $.map(set, function (img,i){
+                    var $img = $(img).css({
+                        maxWidth: w,
+                        height: h
+                    })
+                    var url = $img.attr('url')
+                    var $pic = $('<div class="pic" />')
+                    if (url && url.indexOf('.mp4')>-1){
+                        var video = '<video width="'+w+'" height="'+h+'" autoplayY controls poster="' + $img.attr('src') + '">' +
+                                        '<source src="'+ url +'" type="video/mp4">' +
+                                    '</video>';
+                        $pic.append(video)
+                    } else{
+
+                        $pic.append($img)
+                    }
+                    return $pic
                 })
                 var $slick = $('<div class="slick-slider" />').append($pics)
                     
                 $slick.slick({
                     dots: false,
-                    infinite: true,
+                    infinite: false,
                     speed: 600,
                     fade: false,
                     autoplay:false,
