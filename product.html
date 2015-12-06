@@ -80,14 +80,28 @@
     <script src="bower_components/slick/slick/slick.min.js"></script>
     <script src="js/common.js"></script>
     <script type="text/javascript">
-        $('.slick-slider').slick({
-            dots: false,
-            infinite: true,
-            speed: 600,
-            fade: false,
-            autoplay:true,
-            cssEase: 'linear'
-        });
+
+        if(browser.versions.mobile||browser.versions.android||browser.versions.ios){ 
+            $('.slick-slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                fade: false,
+                autoplay:true,
+                cssEase: 'linear'
+            });
+
+        } else {
+            $('.slick-slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 1000,
+                fade: true,
+                autoplay:true,
+                cssEase: 'linear'
+            });
+
+        }
     </script>
 </body>
 </html>
