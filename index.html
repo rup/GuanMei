@@ -20,7 +20,7 @@
             <div class="pic" style="background-image:url(images/KID/procduct-02.jpg);">
             </div>
         </div>
-        <div class="content">
+        <div class="content clear">
             <div class="logo">
                 <img src="images/logo.png" alt="观美">
                 <p class="slogan"><span>我想牵着你的手，</span>   <span>把爱映成回忆</span></p>
@@ -106,8 +106,11 @@
     <script src="bower_components/slick/jquery-migrate-1.2.1.min.js"></script>
     <script src="bower_components/slick/slick/slick.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $('.autoslide').slick({
+
+        $('.autoslide')
+            .height( $('.content').height() )
+            .slick({
+                accessibility: false,
                 speed: 1000,
                 fade: true,
                 autoplay:true,
@@ -115,7 +118,6 @@
                 prevArrow:false,
                 cssEase: 'linear'
             });
-        });
 
     </script>
 </body>
