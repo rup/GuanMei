@@ -24,6 +24,14 @@
 			}
 		}
 	}
+	.modal {
+		.modal-dialog {
+			.modal-content {
+				max-width: 100%;
+				min-width: 100%;
+			}
+		}
+	}
 	.wrapper {
 		.container {
 			width: 100%;
