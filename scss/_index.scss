@@ -147,6 +147,8 @@
     }
     .slick-list {
         .pic.slick-slide {
+            background-size: cover;
+            background-position: center;
             &:first-child {
                 background-position: 20% 0;
                 background-scale: 60%;

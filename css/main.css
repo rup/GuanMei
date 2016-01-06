@@ -654,9 +654,12 @@ input:focus {
           display: flex !important; }
         #index .content .bar .bar-tab .tab-item a img {
           height: 40px; } }
-  #index .slick-list .pic.slick-slide:first-child {
-    background-position: 20% 0;
-    background-scale: 60%; }
+  #index .slick-list .pic.slick-slide {
+    background-size: cover;
+    background-position: center; }
+    #index .slick-list .pic.slick-slide:first-child {
+      background-position: 20% 0;
+      background-scale: 60%; }
 
 .page-gallery .Grid {
   width: 1080px; }
