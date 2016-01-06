@@ -132,9 +132,6 @@
                 .bar-tab {
                     .tab-item {
                         height: 80px;
-                        &:first-child {
-                            display: flex !important;
-                        }
                         a {
                             img {
                                 height: 40px;
