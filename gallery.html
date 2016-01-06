@@ -304,19 +304,6 @@
         }
         window.onhashchange = window.onload = changeCat
 
-        // modal
-        var tpl = "<div id='myModal' class='modal fade'>" +
-                                "<div class='modal-dialog'>" +
-                                    "<div class='modal-content'>" +
-                                    "</div>" +
-                                "</div>" +
-                            "</div>";
-        $('body').append(tpl);
-        $("#myModal").click(function() { 
-            $("#myModal").hide(); 
-            $('body').css("overflow","auto")
-        });
-
         $(".grid .grid-item").click(function(){
             var $img = $(this).find('img')
             var url = $img.attr('url')
@@ -331,13 +318,13 @@
                                 '<source src="' + url + '" type="video/mp4">' +
                             '</video>';
                 }
-                $('.modal-content').html(video)
+                $modalContent.html(video)
             } else {
                 var srcImg = $img.attr("src"); 
                 var $newImg = $("<img />").attr("src", srcImg)
-                $('.modal-content').html($newImg)
+                $modalContent.html($newImg)
             }
-            $("#myModal").show();
+            $modal.show();
             $('body').css('overflow','hidden')
         });
 
@@ -374,6 +361,19 @@
                     .appendTo('.grid.show-on-mobile .col-1-1')
                     
 
+            })
+
+            
+
+            $('.slick-slider .pic').on('tap, click', function(e){
+                e.preventDefault()
+                if ($(this).find("video").length) return;
+                var $img = $("<img>")
+                var reg = new RegExp(/url\(([^\(\)]+)/)
+
+                $img[0].src = this.dataset.url || this.style.backgroundImage.match(reg)[1]
+                $modalContent.html($img)
+                $modal.show()
             })
 
 

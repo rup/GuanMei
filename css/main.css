@@ -814,6 +814,9 @@ input:focus {
     .slick-slider .slick-slide img {
       width: auto;
       margin: 0 auto; }
+  .modal .modal-dialog .modal-content {
+    max-width: 100%;
+    min-width: 100%; }
   .wrapper .container {
     width: 100%;
     min-height: 100vh;

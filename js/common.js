@@ -29,3 +29,19 @@ $(function () {
 		if($menu.is(':visible')) $menu.fadeOut(600)
 	})
 })
+
+// modal
+var tpl = "<div id='myModal' class='modal fade'>" +
+                "<div class='modal-dialog'>" +
+                    "<div class='modal-content'>" +
+                    "</div>" +
+                "</div>" +
+            "</div>";
+
+$modal = $(tpl)
+$modalContent = $modal.find(".modal-content")
+$modal.click(function() { 
+    $modal.hide(); 
+    $('body').css("overflow","auto")
+});
+$('body').append($modal);
