@@ -77,19 +77,22 @@
     <script type="text/javascript">
 
         if(browser.versions.mobile||browser.versions.android||browser.versions.ios){ 
-            $('.slick-slider').slick({
-                dots: false,
-                infinite: true,
-                speed: 500,
-                fade: false,
-                autoplay:false,
-                cssEase: 'linear'
-            });
+            $('.slick-slider')
+                .eq(0).remove()
+                .end().slick({
+                    dots: false,
+                    infinite: true,
+                    speed: 500,
+                    fade: false,
+                    autoplay:false,
+                    cssEase: 'linear'
+                });
 
             $('.slick-slider .pic').on('tap, click', function(e){
                 e.preventDefault()
                 var $img = $("<img>")
-                $img[0].src = this.dataset.url
+                var reg = new RegExp(/url\(\"?([^\(\)\"\']+)\"?/)
+                $img[0].src = this.dataset.url || this.style.backgroundImage.match(reg)[1]
                 $modalContent.html($img)
                 $modal.show()
             })

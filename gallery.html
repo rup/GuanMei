@@ -369,7 +369,7 @@
                 e.preventDefault()
                 if ($(this).find("video").length) return;
                 var $img = $("<img>")
-                var reg = new RegExp(/url\(([^\(\)]+)/)
+                var reg = new RegExp(/url\(\"?([^\(\)\"\']+)\"?/)
 
                 $img[0].src = this.dataset.url || this.style.backgroundImage.match(reg)[1]
                 $modalContent.html($img)
