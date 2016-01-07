@@ -318,7 +318,7 @@ input:focus {
 
 .share a {
   position: relative; }
-  .share a:last-child:before {
+  .share a:first-child:before {
     content: '';
     position: absolute;
     right: 0;
@@ -328,8 +328,8 @@ input:focus {
     width: 100px;
     height: 100px;
     background: url(../images/qr.jpg) no-repeat 0 0/contain; }
-  .share a:last-child:hover:before {
-    display: blockY; }
+  .share a:first-child:hover:before {
+    display: block; }
 
 .Grid-cell {
   position: relative; }

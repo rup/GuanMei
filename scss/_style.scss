@@ -117,7 +117,7 @@ input:focus {
 .share {
     a {
         position: relative;
-        &:last-child {
+        &:first-child {
             &:before {
                 content: '';
                 position: absolute;
@@ -131,7 +131,7 @@ input:focus {
             }
             &:hover {
                 &:before {
-                    display: blockY;
+                    display: block;
                 }
             }
         }
