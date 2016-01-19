@@ -343,7 +343,7 @@
                                     '</video>';
                         $pic.append(video)
                     } else{
-                        $pic.css('background-image', 'url('+encodeURIComponent($img.attr('src'))+')')
+                        $pic.css('background-image', 'url('+encodeURI($img.attr('src'))+')')
                     }
                     return $pic
                 })
