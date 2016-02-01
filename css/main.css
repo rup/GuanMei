@@ -564,7 +564,9 @@ input:focus {
     background: rgba(201, 188, 156, 0.5); }
   #index .content .bar .bar-tab {
     height: 100%;
-    margin: 0 auto; }
+    margin: 0 auto; 
+	padding-left: 200px;
+    padding-right: 200px;}
   #index .content .bar .bar-tab .tab-item {
     display: -webkit-box;
     display: -webkit-flex;
