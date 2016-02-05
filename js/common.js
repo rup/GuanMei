@@ -42,6 +42,7 @@ $modal = $(tpl)
 $modalContent = $modal.find(".modal-content")
 $modal.click(function() { 
     $modal.hide(); 
+    $modalContent.html('')
     $('body').css("overflow","auto")
 });
 $('body').append($modal);
